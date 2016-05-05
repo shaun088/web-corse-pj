@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+    <p>euro amount</p>
+<input type="text" id="euro">
+<p>pound amount</p>
+<input type="text" id="pound">
+<button onclick="convert()">convert</button>
+
+<script type="text/javascript">
+
+var currentExchangRate = // get online code
+
+function convert(){
+
+    // we capture the value typed into the euro box
+    var eur = document.getElementById('euro').value;
+
+      // Calculate the exchange
+    var result = eur * 0.8;
+
+      // desplay the result inside the pound input box
+    document.getElementById('pound').value = result;
+}
+
+</script>
+
+</body>
+</html>
